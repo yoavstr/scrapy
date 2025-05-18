@@ -1,7 +1,8 @@
-from bs4 import BeautifulSoup
-import requests
 from collections import Counter
+
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 
 url = "https://en.wikipedia.org/wiki/List_of_Aquaman_enemies"
 
@@ -26,9 +27,7 @@ for row in rows[1:]:
     first_appearance = td[0].get_text(strip=True)
     description = td[1].get_text(strip=True)
 
-    info = {"villain": villain,
-            "first_appearance": first_appearance,
-            "description": description}
+    info = {"villain": villain, "first_appearance": first_appearance, "description": description}
 
     aquaman_villains.append(info)
 
@@ -43,14 +42,14 @@ duplicates = [item for item, count in counts.items() if count > 1]
 replacements = {
     "Black MantaDavid Hyde[a]": "Black Manta (David Hyde)",
     "Ocean MasterOrm Marius[a]": "Ocean Master (Orm Marius)",
-    "ScavengerPeter Mortimer": "Scavenger (Peter Mortimer)"
+    "ScavengerPeter Mortimer": "Scavenger (Peter Mortimer)",
 }
 
 # Apply replacements
 for villain in aquaman_villains:
-    name = villain['villain']
+    name = villain["villain"]
     if name in replacements:
-        villain['villain'] = replacements[name]
+        villain["villain"] = replacements[name]
 
 df = pd.DataFrame(aquaman_villains)
 print(df)

@@ -9,4 +9,39 @@ dependencies = [
     "lxml>=5.4.0",
     "numpy>=2.2.4",
     "pandas>=2.2.3",
+    "ruff>=0.11.10",
+    "yapf>=0.43.0",
+]
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 100
+
+[tool.ruff]
+line-length = 100
+fix = true
+unsafe-fixes = true
+extend-select = ["I"]  # organize imports
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = [
+  "F",
+  "E",
+  "I",
+  "N",
+  "UP",
+  "PT",
+  "Q",
+  "RET",
+  "SIM",
+  "ARG",
+  "ERA",
+  "PL",
+  "NPY",
+  "PERF",
+  "FURB",
 ]
