@@ -27,11 +27,9 @@ To set up the project, you will need Python and `uv` installed.
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/yoavstr/scrapy
     cd scrapy
     ```
-
-    *(Replace `<repository_url>` with the actual URL of your repository)*
 
 2.  **Install dependencies using `uv`:**
 
