@@ -1,6 +1,6 @@
-# scrapy
+# SternSoupScraper
 
-This project, named `scrapy`, is a personal data & web scraping project developed for my portfolio. It demonstrates the ability to extract structured data from websites using Python libraries such as `requests`, `BeautifulSoup`, and `pandas`. Dependency management is handled with `uv`.
+This project, named `SternSoupScraper`, is a personal data & web scraping project developed for my portfolio. It demonstrates the ability to extract structured data from websites using Python libraries such as `requests`, `BeautifulSoup`, and `pandas`. Dependency management is handled with `uv`.
 
 ## Project Description
 
@@ -27,8 +27,8 @@ To set up the project, you will need Python and `uv` installed.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yoavstr/scrapy
-    cd scrapy
+    git clone https://github.com/yoavstr/SternSoupScraper
+    cd SternSoupScraper
     ```
 
 2.  **Install dependencies using `uv`:**

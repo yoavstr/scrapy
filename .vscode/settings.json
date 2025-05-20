@@ -3,7 +3,7 @@
     "python.formatting.yapfPath": ".venv/bin/yapf", // Windows: ".venv\\Scripts\\yapf.exe"
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true,
-        "source.fixAll": true
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit"
     }
 }
