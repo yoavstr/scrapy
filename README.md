@@ -8,6 +8,8 @@ The project currently consists of two main scripts:
 
 1.  **Scraping Aquaman Villains:** This script extracts a list of Aquaman's enemies from a Wikipedia page, including their first appearance and a brief description.
 2.  **Scraping US Presidents:** This script extracts information about US Presidents from another Wikipedia page, including their birth/death years, name, party, term start date, election year(s), vice president(s), and a brief description scraped from their individual Wikipedia pages.
+3.  **Scraping 20th Century Wars:** This script extracts information from 3 different Wikipedia pages including relevant dates, names, involvements, and descriptions from the individual pages.
+
 
 The scraped data is processed and stored in pandas DataFrames for potential further analysis or use.
 
@@ -54,6 +56,11 @@ You can run the individual scripts from your terminal.
 
     ```bash
     python usa_presidents.py
+    ```
+3.  **To scrape US Presidents:**
+
+    ```bash
+    python 20th_century_wars.py
     ```
 
 The scripts will print the resulting pandas DataFrames to the console. You can modify the scripts to save the data to a file (e.g., CSV, JSON) if needed.
